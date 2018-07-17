@@ -4,10 +4,10 @@
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
 
 //Defining my variables//
-var wins = 0;
-var losses = 0;
 var guessesLeft = 9;
 var guessChoices = [];
+var wins = 0;
+var losses = 0;
 
 //Defining a function
 document.onkeyup = function (event) {
@@ -15,7 +15,7 @@ document.onkeyup = function (event) {
     //Each time a key is pressed, it will store that value in 'userGuess'
     var userGuess = event.key.toLowerCase();
   
-    //Defining my computerGuess varible. Whatever letter the computer chooses at random will store that value instead varible: computerGuess
+    //Defining my computerGuess varible. Whatever letter the computer chooses at random will store that value inside varible: computerGuess
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     
 
